@@ -4,6 +4,20 @@ function Todo() {
     useEffect(()=>{
         alert("This Todo list application_ allows users to_ add, edit, and remove tasks_ with tasks persistently stored_ in the browser's localStorage_. Users can input tasks_ via a text input field_ and press Enter or click submit_ to add them to the list_. Tasks can be edited_ directly within the list_ by clicking on them_, and changes are saved automatically_. Each task has a delete button (x)_ for removal_, and the input field_ is automatically focused_ for quick task entry_.")
     },[])
+
+    const  SetData=()=> {
+        const todoData = localStorage.getItem('todo');
+
+        const data =JSON.parse(todoData);
+
+        if (!Array.isArray(data)){
+            return []
+        }
+        else{
+            return  data
+        }
+           
+    }
    
     
     const [task, setTask] = useState('')
@@ -26,12 +40,10 @@ function Todo() {
     }, [todo]);
 
 
-    function SetData() {
-        const todoData = localStorage.getItem('todo');
-        const data = JSON.parse(todoData)
+  
 
-        return data
-    }
+
+    
 
     function EditTask(index,textValue){
         const EditedTodo=[...todo]
