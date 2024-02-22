@@ -70,15 +70,11 @@ i{
   border-radius: 5px;
 }
 
-button:active{
-  scale: .9;
-}
-i:active{
-  scale: .9;
-}
-i{
-  font-size: larger;
+button{
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
   cursor: pointer;
-  color: black;
-  padding: 10px;
 }
