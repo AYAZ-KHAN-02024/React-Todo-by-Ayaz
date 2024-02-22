@@ -10,8 +10,7 @@ This is a simple Todo List application built using React.
 - Tasks are saved in the browser's local storage, so they persist even after refreshing the page.
 
 ## site link
- https://todo-by-ayaz.netlify.app/
-
+https://ayaz-khan-02024.github.io/React-Todo-by-Ayaz/
 ## Author
 
 [MD AYAZ KHAN]
